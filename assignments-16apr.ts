@@ -1,7 +1,7 @@
 //1.Temperature of a city in degrees Celsius: 25.5
 
 let temp:number=25.5;
-console.log(`1.Temparature of a city in degress Celsius: ${temp}`);
+console.log(`1.Temparature of a city in degress Celsius is: ${temp}`);
 
 //2.Whether a customer has placed an order: true or false
 
