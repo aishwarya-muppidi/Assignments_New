@@ -5,7 +5,7 @@ console.log(`1.Temparature of a city in degress Celsius is: ${temp}`);
 
 //2.Whether a customer has placed an order: true or false
 
-let placeorder =true;
+let placeorder:boolean =true;
 let placeorder1 = placeorder ? "true" : "flase";
 console.log(`2.Whether a customer has placed an order: ${placeorder1}`);
 
@@ -27,7 +27,7 @@ let latitude1:number=37.7749;
 let longitude1:number=-122.4194;
 console.log(`6.Coordinates of a location (latitude, longitude): ${latitude1}, ${longitude1}`);
 //7.person's marital status
-let isMarried = true;
+let isMarried:boolean = true;
 let maritalStatus = isMarried ? "Married" : "Single";
 console.log(`7.Marital Status: ${maritalStatus}`);
 
@@ -53,7 +53,7 @@ let ratingOfMovie:number=7.5;
 console.log(`12.Rating of a movie:${ratingOfMovie}`);
 
 //13.Person's blood type: 'A'
-let personBloodType='A';
+let personBloodType:string='A';
 console.log(`13.Person's blood type: ${personBloodType}`);
 
 //14.Title of a book: "To Kill a Mockingbird"
@@ -69,20 +69,22 @@ let timeOfEvent:String='2:30 PM';
 console.log(`16.Time of an event: ${timeOfEvent}`);
 
 //17.Name of a country: "United States"
-let nameOfCountry='United States';
+let nameOfCountry:string='United States';
 console.log(`17.Name of a country: ${nameOfCountry}`);
 
 //18.Person's eye color: "Brown"
-//let personEyeColur:string='"Brown"';
-//console.log('18.Person's eye color:'+ personEyeColur);
+let personEyeColur:string='"Brown"';
+console.log(`18.Person's eye color: ${personEyeColur}`);
 
 
 //19.Person's birthplace: "New York City"
-//let personBirthPlace='"New York City"';
-//console.log('19.Person's birthplace: '+personBirthPlace);
+let personBirthPlace:string='"New York City"';
+console.log(`19.Person's birthplace: ${personBirthPlace}`);
 
 
 //20.Distance between two cities: 200.5
 let distanceBtwCities:number=200.5;
 console.log(`20.Distance between two cities:${distanceBtwCities}`);
+
+
 
