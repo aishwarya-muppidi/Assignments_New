@@ -1,0 +1,45 @@
+{
+     "duplicateRepo":{
+        "requestType":"POST",
+        "endpoint":"/user/repos",
+        "body":{            
+            "name" : "JmeterRepo"
+        },
+        "expectedStatusCode":422,
+        "expectedStatusMessage":"Unprocessable Entity",
+        "expErrorMessage":"Repository creation failed."
+     },
+     "validRepo":{
+        "requestType":"POST",
+        "endpoint":"/user/repos",
+        "body":{            
+            "name" : "JmeterRepo_NewRepoTest03"
+        },
+        "expectedStatusCode":201,
+        "expectedStatusMessage":"Created",
+        "name":"JmeterRepo_NewRepoTest03"
+     },
+     "getRepo":{
+        "requestType":"GET",
+        "endpoint":"/repos/akethireddy93/JmeterRepo_NewRepoTest03",
+        "expectedStatusCode":200,
+        "expectedStatusMessage":"OK",
+        "name":"JmeterRepo_NewRepoTest03"
+     },
+      "updateRepo":{
+        "requestType":"PATCH",
+        "endpoint":"/repos/akethireddy93/JmeterRepo_NewRepoTest03",
+        "body":{            
+            "name" : "JmeterRepo_NewRepoTest03Updated"
+        },
+        "expectedStatusCode":200,
+        "expectedStatusMessage":"OK",
+        "name":"JmeterRepo_NewRepoTest03Updated"
+     },
+      "deleteRepo":{
+        "requestType":"DELETE",
+        "endpoint":"/repos/akethireddy93/JmeterRepo_NewRepoTest03",
+        "expectedStatusCode":204,
+        "expectedStatusMessage":"No Content"       
+     }
+}
